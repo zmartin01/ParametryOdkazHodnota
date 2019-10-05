@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println("=====================");
 
-        Trida trida = new Trida(5);
+        Trida trida = new Trida(1);
         System.out.println("Field trida.cislo pred provolanim prictiJednickuKFieldu: " + trida.getCislo());
         prictiJednickuKFieldu(trida);
         System.out.println("Field trida.cislo po provolani prictiJednickuKFieldu: " + trida.getCislo());
@@ -28,6 +28,7 @@ public class Main {
 
     // preda se ODKAZ na objekt
     public static void prictiJednickuKFieldu(Trida a){
+        System.out.println("Metoda prictiJednickuKFieldu, pred operaci pricteni: " + a.getCislo());
         a.setCislo(a.getCislo() + 1);
         System.out.println("Metoda prictiJednickuKFieldu, vysledek po pricteni: " + a.getCislo());
     }
